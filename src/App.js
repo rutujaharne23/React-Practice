@@ -10,6 +10,8 @@ function App() {
     <div>
       <Header />
       <TableSearch />
+      {/* <Calculator /> */}
+      {/* <ModalImageGallery /> */}
     </div>
   );
 }
