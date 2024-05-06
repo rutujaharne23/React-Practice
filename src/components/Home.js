@@ -47,6 +47,17 @@ export const Home = () => {
                     <Link to="/multiStepper"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
+            <div className="border-gray-500 shadow-xl rounded-md p-4 h-52">
+                <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
+                    Custom Hooks 
+                </div>
+                <div className="text-sm font-medium italic pt-5">
+                    usePrevious
+                </div>
+                <div className="text-center pt-11">
+                    <Link to="/customHooks"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
+                </div>
+            </div>
         </div>
     );
 }
