@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home';
 import { MultiStepper } from './projects/multi-stepper';
 import { CustomHooks } from './projects/customHooks';
+import { UsePreviousHooks } from './components/UsePreviousHooks';
+import { InfiniteScroll } from './projects/infinite-scroll';
 
 function App() {
   return (
@@ -14,14 +16,14 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path='/table' element={<TableSearch />} />
             <Route path='/calculator' element={<Calculator />} />
             <Route path='/modalImageGallery' element={<ModalImageGallery />} />
             <Route path='/multiStepper' element={<MultiStepper />} />
             <Route path='/customHooks' element={<CustomHooks />} />
-          </Route>
+            <Route path='/usePreviousHooks' element={<UsePreviousHooks />} />
+            <Route path='/infiniteScroll' element={<InfiniteScroll />} />
         </Routes>
       </BrowserRouter>
     </div>

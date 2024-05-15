@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     
@@ -7,6 +8,7 @@ export const Header = () => {
                 Practice
             </div>
             <div className="font-bold">Home</div>
+            {/* <Link to={"/"}>sad</Link> */}
         </div>
     );
 }

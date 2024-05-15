@@ -4,7 +4,7 @@ export const Home = () => {
     return (
         <div className="grid grid-cols-5 gap-5 p-9">
             <div className="shadow-xl rounded-md p-4 h-52">
-                <div className="border-2 border-dotted border-gray-500 p-3 font-bold text-xl text-center ita text-gray-700">
+                <div className="border-2 border-dotted border-gray-500 p-3 font-bold text-xl text-center italic text-gray-700">
                     Table
                 </div>
                 <div className="text-sm font-medium italic pt-5">
@@ -14,7 +14,7 @@ export const Home = () => {
                     <Link to="/table"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
-            <div className="border-gray-500 shadow-xl rounded-md p-4 h-52">
+            <div className="shadow-xl rounded-md p-4 h-52">
                 <div className="border-2 border-dotted border-gray-500 p-3 font-bold text-xl text-center italic text-gray-700">
                     Modal
                 </div>
@@ -25,7 +25,7 @@ export const Home = () => {
                     <Link to="/modalImageGallery"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
-            <div className="border-gray-500 shadow-xl rounded-md p-4 h-52">
+            <div className="shadow-xl rounded-md p-4 h-52">
                 <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
                     Calculator
                 </div>
@@ -36,7 +36,7 @@ export const Home = () => {
                     <Link to="/calculator"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
-            <div className="border-gray-500 shadow-xl rounded-md p-4 h-52">
+            <div className="shadow-xl rounded-md p-4 h-52">
                 <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
                     Stepper
                 </div>
@@ -47,7 +47,7 @@ export const Home = () => {
                     <Link to="/multiStepper"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
-            <div className="border-gray-500 shadow-xl rounded-md p-4 h-52">
+            <div className="shadow-xl rounded-md p-4 h-52">
                 <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
                     Custom Hooks 
                 </div>
@@ -56,6 +56,17 @@ export const Home = () => {
                 </div>
                 <div className="text-center pt-11">
                     <Link to="/customHooks"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
+                </div>
+            </div>
+            <div className="shadow-xl rounded-md p-4 h-52">
+                <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
+                    Infinite Scroll 
+                </div>
+                <div className="text-sm font-medium italic pt-5">
+                    count, window.scroll, etc.
+                </div>
+                <div className="text-center pt-11">
+                    <Link to="/infiniteScroll"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
         </div>

@@ -1,32 +1,19 @@
-import { usePrevious } from "../hooks/usePrevious";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const CustomHooks = () => {
-    const [count, setCount] = useState(0);
-    const prevCount = usePrevious(count);
-
     return (
-        <div className=" pt-9">
-            <div className="text-3xl text-center pb-6 font-bold">usePrevious</div>
-            <div className="flex justify-center">
-                <div className="border-2 border-gray-600 p-12">
-                    <div className="flex justify-evenly">
-                        <div className="text-xl font-semibold italic">Now:</div>
-                        <div className="text-xl font-bold">{count}</div>
+        <>
+            <div className="text-3xl text-center font-bold pt-3">Hooks</div>
+            <div className="grid grid-cols-5 gap-5 p-9">
+                <div className="shadow-xl rounded-md p-4 h-40">
+                    <div className="border-2 border-double border-gray-500 p-3 font-bold text-xl text-center ita text-gray-700 underline">
+                        usePrevious
                     </div>
-                    <div className="flex justify-evenly">
-                        <div className="text-xl font-semibold italic">before:</div>
-                        <div className="text-xl font-bold">{prevCount}</div>
-                    </div>
-                    <div className="pt-5 text-center">
-                        <button className="bg-orange-400 p-1 px-4 rounded-md" onClick={() => setCount(count - 1)}>Decrement</button>
-                    </div>
-                    <div className="pt-5 text-center">
-                        <button className="bg-orange-400 p-1 px-4 rounded-md" onClick={() => setCount(count + 1)}>Increment</button>
+                    <div className="text-center pt-6">
+                        <Link to="/usePreviousHooks"><button className="bg-gray-600 text-white px-12 py-2 rounded-md shadow-md cursor-pointer">Try Example</button></Link>
                     </div>
                 </div>
             </div>
-
-        </div>
+        </>
     );
 }
