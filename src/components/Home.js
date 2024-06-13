@@ -69,6 +69,39 @@ export const Home = () => {
                     <Link to="/infiniteScroll"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
                 </div>
             </div>
+            <div className="shadow-xl rounded-md p-4 h-52">
+                <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
+                    Drag and Drop 
+                </div>
+                <div className="text-sm font-medium italic pt-5">
+                    ItemArray, event, draggedItemIndex etc.
+                </div>
+                <div className="text-center pt-6">
+                    <Link to="/dragAndDrop"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
+                </div>
+            </div>
+            <div className="shadow-xl rounded-md p-4 h-52">
+                <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
+                     Alert Box
+                </div>
+                <div className="text-sm font-medium italic pt-5">
+                    Button, CustomAlert Box etc.
+                </div>
+                <div className="text-center pt-11">
+                    <Link to="/alertBox"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
+                </div>
+            </div>
+            <div className="shadow-xl rounded-md p-4 h-52">
+                <div className="border-2 border-dotted border-gray-500  p-3 font-bold text-xl text-center italic text-gray-700">
+                     Lazy loading
+                </div>
+                <div className="text-sm font-medium italic pt-5">
+                    etc.
+                </div>
+                <div className="text-center pt-11">
+                    <Link to="/lazyLoading"><button className="bg-gray-600 text-white px-14 py-2 rounded-md shadow-md cursor-pointer">Click me!</button></Link>
+                </div>
+            </div>
         </div>
     );
 }

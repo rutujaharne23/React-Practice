@@ -9,6 +9,9 @@ import { MultiStepper } from './projects/multi-stepper';
 import { CustomHooks } from './projects/customHooks';
 import { UsePreviousHooks } from './components/UsePreviousHooks';
 import { InfiniteScroll } from './projects/infinite-scroll';
+import { DragAndDrop } from './projects/dragAndDrop';
+import { AlertBox } from './projects/alertBox';
+import { LazyLoading } from './projects/lazyLoading';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
             <Route path='/customHooks' element={<CustomHooks />} />
             <Route path='/usePreviousHooks' element={<UsePreviousHooks />} />
             <Route path='/infiniteScroll' element={<InfiniteScroll />} />
+            <Route path='/dragAndDrop' element={<DragAndDrop />} />
+            <Route path='/alertBox' element={<AlertBox />} />
+            <Route path='/lazyLoading' element={<LazyLoading />} />
         </Routes>
       </BrowserRouter>
     </div>

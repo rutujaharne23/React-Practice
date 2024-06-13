@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const Header = () => {
     
     return (
@@ -7,8 +5,7 @@ export const Header = () => {
             <div className="uppercase font-bold italic text-xl">
                 Practice
             </div>
-            <div className="font-bold">Home</div>
-            {/* <Link to={"/"}>sad</Link> */}
+            <a href="/"><div className="font-bold">Home</div></a>
         </div>
     );
 }
